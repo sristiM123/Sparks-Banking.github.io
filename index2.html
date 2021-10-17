@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPARKS BANKING</title>
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet"
+    href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="C:\Users\sristi\Desktop\banking project\st.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+  <!-- AOS  -->
+  <link rel="stylesheet" href="C:\Users\sristi\Desktop\banking project\st.css" />
+
+</head>
+
+<body style="background-color:pink" onload="loader()";>
+
+
+  <!-- loader for splash screen -->
+  <div id="loading"></div>
+
+  <!-- navbar starts here  -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="./index.html">SPARKS BANKING</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto" id="navbar_left">
+        <li class="nav-item active">
+          <a class="nav-link" href="C:\Users\sristi\Desktop\banking project\home.html">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="C:\Users\sristi\Desktop\banking project\customer list.html">View All Customers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.thesparksfoundationsingapore.org/" target="_blank">About US</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- navbar ends here  -->
+
+  <!-- here content starts here -->
+  <div class="container-fluid hero-content">
+    <div class="row align-items-center">
+      <div class="col-md-5 col-sm-11 text-center" data-aos="fade-up" >
+        
+        <h1 id="welcome">Welcome</h1> 
+        <h2>Sparks Banking System</h2>
+        <p class="lead muted"></p>Be with us</p>
+        <br>
+        <br>
+        <a class="get-started" href="./customers.html">Let's Get Started</a>
+      </div>
+      <div class="col-md-6 col-sm-12 text-center" data-aos="fade-left">
+        <div class="i1-div">
+          <img class="i1" src="C:\Users\sristi\Desktop\banking project\Bank.jpg"
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- here content ends here -->
+
+
+
+
+  <!-- footer starts here -->
+  <footer>
+    <hr>
+    <div class="row text-center">
+      <div class="col-md-6">
+        <p><li><a target="_blank" class="The Sparks Foundation" href="https://www.linkedin.com/company/the-sparks-foundation/mycompany/"> The Sparks Foundation</a> </p>
+
+      </div>
+      <div class="col-md-6 text-center">
+        <ul class="social-icons">
+          Connect :
+          <li><a target="_blank" class="LinkedIn" href="https://www.linkedin.com/in/sristi-mitra-3260b11b4/"> SRISTI MITRA <i
+                class="fab fa-linkedin fa-2x"></i></a>
+            </li>
+
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!-- footer ends here -->
+
+  <!-- spalsh screen js -->
+  <script>
+    var preloader = document.getElementById("loading");
+    function loader() {
+      preloader.style.display = 'none';
+    }
+  </script>
+
+  <script src="assets/js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"></script>
+  <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"></script>
+
+  <!-- aos data  -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 700,
+    });
+  </script>
+
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View All Customers|Online Transaction Portal</title>
+    <link rel="stylesheet"
+        href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css">
+    <link rel="stylesheet" href="C:\Users\sristi\Desktop\banking project\st.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- navbar starts here  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="./index.html">SPARKS BANKING PORTAL</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="C:\Users\sristi\Desktop\banking project\home.html">Home Page </a>
+                </li>
+                <li class="nav-item  active">
+                    <a class="nav-link" href="./customers.html" data-toggle="modal" data-target="#sendMoney"
+                        style="color: background-color: rgb(180, 178, 178);">Send Money</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.thesparksfoundationsingapore.org/" target="_blank">About
+                        US </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- navbar ends here  -->
+
+    <div class="my-info text-center">
+        
+        <h2 style="color: white;"> Name: SRISTI MITRA</h2>
+        <h4 style="color: white;">Net Bank Balance: ₹<span id="myAccountBalance">500000</span></h4> 
+
+        <button class="btn btn-info" data-toggle="modal" data-target="#sendMoney">Send Money</button>
+        <a class="btn btn-info" href="" data-toggle="modal" data-target="#transactionHistory">View All Transactions</a>
+    </div>
+
+    <!-- Modal send money -->
+    <div class="modal fade" id="sendMoney" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Send Money</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="input-group mb-3">
+                            <input type="text" id="enterName" class="form-control" placeholder="Recipient's username"
+                                aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <span class="input-group-text" id="basic-addon2">@email.com</span>
+                            </div>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">₹</span>
+                            </div>
+                            <input type="text" id="enterAmount" class="form-control" placeholder=" Enter Amount"
+                                aria-label="Amount (to the nearest dollar)">
+                            <div class="input-group-append">
+                                <span class="input-group-text">.00</span>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" onclick="sendMoney()" class="btn btn-success" data-dismiss="modal">Send
+                        Money</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal transaction History-->
+    <div class="modal fade" id="transactionHistory" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Transaction History</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ol id="transaction-history-body">
+
+                    </ol>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+        </div>
+    </div>
+
+    <script src="CSS_files/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"></script>
+
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>View Customers</title>
+
+  <!-- Googlefont -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS style sheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="C:\Users\sristi\Desktop\banking project\st.css">
+
+  <!-- fontawesome -->
+  <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js" charset="utf-8"></script>
+
+  <!-- bootstrap script -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <!-- title section -->
+  <section id="title">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html">
+          <h2 class="navbar-heading">SPARKS BANKING</h2>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="C:\Users\sristi\Desktop\banking project\home.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="customer list.html">View Customers</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="about.html">About us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="my-info text-center">
+      <button class="btn btn-outline-light" data-toggle="modal" data-target="#sendMoney">Send Money</button>
+      <a class="btn btn-outline-light" href="history.html" data-toggle="modal" data-target="#transactionHistory">See All Transactions</a>
+    </div>
+
+  </section>
+
+
+  <section id="main" class="coloured-section">
+
+    <!--Modal Send Money-->
+    <div class="modal fade" id="sendMoney" tableindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Send Money</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="input-group mb-3">
+                <input type="text" id="enterSName" class="form-control" placeholder="Sender's Username" aria-label="Sender's Username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+                </div>
+              </div>
+              <div class="input-group mb-3">
+                <input type="text" id="enterName" class="form-control" placeholder="Recipient's Username" aria-label="Recipient's Username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+                </div>
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">₹</span>
+                </div>
+                <input type="text" id="enterAmount" class="form-control" placeholder="Enter Amount" aria-label="Amount">
+                <div class="input-group-append">
+                  <span class="input-group-text">.00</span>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" onclick="sendMoney()" class="btn btn-success" data-dismiss="modal">Send Money</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Modal Transaction History-->
+    <div class="modal fade" id="transactionHistory" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Transaction History</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <ol id="transaction-history-body">
+
+            </ol>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   
+
+    <footer class="white-section" id="footer">
+      <div class="container-fluid">
+        <i class="social-icon fab fa-facebook fa-2x"></i>
+        <i class="social-icon fab fa-twitter fa-2x"></i>
+        <i class="social-icon fab fa-instagram fa-2x"></i>
+        <i class="social-icon fab fa-linkedin fa-2x"></i>
+        <br>
+        <br>
+        <p> Sristi Mitra</p>
+      </div>
+    </footer>
+
+  </section>
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"></script>
+  <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"></script>
+</body>
+</html>6
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>About us-SPARKS BANKING</title>
+
+  <!-- Googlefont -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS style sheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- fontawesome -->
+  <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js" charset="utf-8"></script>
+
+  <!-- bootstrap script -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <section id="title">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html">
+          <h2 class="navbar-heading">SPARKS BANKING</h2>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="C:\Users\sristi\Desktop\banking project\home.html">Home</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="C:\Users\sristi\Desktop\banking project\customer list.html">View Customers</a>
+            </li>
+            <li class="nav-item active ">
+              <a class="nav-link" href="about.html">About US</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="heading text-center my-5">
+          <h1 class="big-heading"> SPARKS BANKING SYSTEM</h1>
+            <h2 class="big-heading"> By SRISTI MITRA</h2>
+          </div>
+  </div>
+
+
+  <h1 class="big-heading">WHY SHOULD YOU CHOOSE US?</h1>
+    </div>
+
+  </section>
+
+  <section class="white-section" id="features">
+    <div class="container-fluid">
+
+      <div class="row">
+
+        <div class="feature-box col-lg-4">
+          <i class="icon far fa-check-circle fa-4x"></i>
+          <h3 class="feature-title">Do banking in just single click</h3>
+          <p>Easy money transfer in one click</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-history fa-4x"></i>
+          <h3 class="feature-title">Check your transaction history</h3>
+          <p>We are providing your transaction details</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-users fa-4x"></i>
+          <h3 class="feature-title">24*7 Customer Service</h3>
+          <p>Send your money easily from anywhere</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer class="coloured-section" id="footer">
+    <br>
+      <br>
+        <br>
+    <div class="container-fluid">
+
+      <i class="social-icon fab fa-facebook fa-2x"></i>
+      <i class="social-icon fab fa-github fa-2x"></i>
+      <i class="social-icon fab fa-instagram fa-2x"></i>
+      <i class="social-icon fab fa-linkedin fa-2x"></i>
+      <br>
+      <br>
+      <p>SRISTI MITRA</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
